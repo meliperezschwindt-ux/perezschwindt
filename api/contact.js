@@ -17,7 +17,7 @@ export default async function handler(req, res) {
 
   try {
     await resend.emails.send({
-      from: 'PEREZINDT Estudio <contacto@perezindtestudio.site>',
+      from: 'PEREZINDT Estudio <onboarding@resend.dev>',
       to: 'meliperezschwindt@gmail.com',
       reply_to: email,
       subject: `Nueva consulta de ${nombre}`,
@@ -62,4 +62,5 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'No se pudo enviar el mensaje. Intentá de nuevo.' });
   }
 }
+
 
